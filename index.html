@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scroll">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding celebration of Kissna & Dhaval on January 16-17, 2027 in Nakhatrana, Kutch, Gujarat. Join us to bless their union!">
+  <meta property="og:title" content="Wedding Invitation | Kissna & Dhaval">
+  <meta property="og:description" content="Two hearts, one soul. Together with their families, Kissna & Dhaval invite you to celebrate their wedding!">
+  <meta property="og:image" content="WhatsApp Image 2026-11-03 at 1.11.10 PM.jpeg">
+  <title>Wedding Invitation | Kissna & Dhaval</title>
+
+  <!-- Google Fonts: Playfair Display, Cinzel, Montserrat, Great Vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+
+  <!-- Fixed Floral Background Layer -->
+  <div class="fixed-bg"></div>
+
+  <!-- Falling Petals Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Floating Audio Controls -->
+  <div id="audio-control" class="audio-control" title="Toggle Wedding Music">
+    <button id="btn-toggle-music" class="btn-music" aria-label="Toggle Background Music">
+      <div class="music-icon-wrap">
+        <i class="fa-solid fa-music"></i>
+        <div class="sound-waves">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <span class="music-text">Music</span>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       SPLASH SCREEN (ROYAL INVITATION CARD WITH CLICKABLE LOGO)
+       ========================================================================== -->
+  <div id="splash-screen" class="splash-overlay">
+    <div class="splash-container">
+      <img src="open_card.jpg" alt="Kissna & Dhaval Royal Wedding Invitation" class="splash-card-img">
+      
+      <!-- Clickable DK Monogram Seal Button -->
+      <button id="btn-open-invitation" class="splash-seal-btn" aria-label="Open Invitation">
+        <div class="seal-pulse-ring"></div>
+        <div class="seal-pulse-ring delay"></div>
+        <div class="seal-inner-circle">
+          <img src="WhatsApp Image 2026-11-03 at 1.11.39 PM.jpeg" alt="DK Monogram Logo" class="seal-img">
+        </div>
+        <div class="seal-btn-text">
+          <span><i class="fa-solid fa-envelope-open"></i> Open Invitation</span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO BANNER SECTION
+       ========================================================================== -->
+  <header id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-mantra">|| ૐ શ્રી ગણેશાય નમઃ ||</div>
+      <p class="hero-subtitle">The Wedding Celebration of</p>
+      <h1 id="hero-names" class="hero-title">
+        Kissna <span class="connector">&</span> Dhaval
+      </h1>
+      <div class="hero-date-badge">
+        <i class="fa-regular fa-calendar-check"></i>
+        <span id="hero-date">17.01.2027</span>
+      </div>
+      <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Vidhyarthi Bhavan, Nakhatrana, Kutch, Gujarat</p>
+      <a href="#couple-section" class="hero-scroll-btn" aria-label="Scroll to details">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN FLORAL CONTENT WRAPPER
+       ========================================================================== -->
+  <main class="floral-sections-wrapper">
+
+    <!-- ==========================================================================
+         BRIDE & GROOM SECTION
+         ========================================================================== -->
+    <section id="couple-section" class="section-padding couple-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Two Hearts, One Soul</span>
+          <h2>Bride & Groom</h2>
+          <div class="header-divider"><i class="fa-solid fa-om"></i></div>
+          <p>Two beautiful souls unite to begin a magnificent journey of eternal love</p>
+        </div>
+
+        <div class="couple-row">
+          
+          <!-- Bride Card -->
+          <div class="couple-card bride-card">
+            <div class="couple-card-inner">
+              <div class="couple-img-wrapper">
+                <img id="bride-photo" src="IMG_0009.JPG.jpeg" alt="Bride - Kissna">
+                <div class="img-frame-accent"></div>
+              </div>
+              <div class="couple-info">
+                <span class="role-tag">The Bride</span>
+                <h3 id="bride-name">Kissna</h3>
+                <p id="bride-parents" class="couple-parents">
+                  <i class="fa-solid fa-heart-circle-bolt"></i> D/o. Leelaben & Vijay Haribhai Somjiyani
+                </p>
+                <div class="card-line"></div>
+                <p id="bride-bio" class="couple-bio">
+                  "With a heart full of love and gratitude, I step into this beautiful new chapter of life with Dhaval. Ready to weave a lifetime of cherished memories, endless laughter, and shared dreams surrounded by the blessings of our loved ones."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Central Knot / Emblem -->
+          <div class="couple-heart-wrapper">
+            <div class="heart-pulse-circle">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <span class="sacred-knot-text">Shubh Vivah</span>
+          </div>
+
+          <!-- Groom Card -->
+          <div class="couple-card groom-card">
+            <div class="couple-card-inner">
+              <div class="couple-img-wrapper">
+                <img id="groom-photo" src="groom_solo.jpg" alt="Groom - Dhaval">
+                <div class="img-frame-accent"></div>
+              </div>
+              <div class="couple-info">
+                <span class="role-tag">The Groom</span>
+                <h3 id="groom-name">Dhaval</h3>
+                <p id="groom-parents" class="couple-parents">
+                  <i class="fa-solid fa-heart-circle-bolt"></i> S/o. Shilaben & Kishorbhai Madhavji Bhagat
+                </p>
+                <div class="card-line"></div>
+                <p id="groom-bio" class="couple-bio">
+                  "Ready to embark on forever with my best friend and soulmate, Kissna. I warmly welcome you and your family to join us, bless our new beginning, and make our wedding celebrations truly joyful and unforgettable."
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COUNTDOWN TIMER SECTION
+         ========================================================================== -->
+    <section id="countdown-section" class="section-padding countdown-section">
+      <div class="container">
+        <div class="countdown-card">
+          <div class="section-header countdown-header">
+            <span class="section-badge">Save The Auspicious Date</span>
+            <h2>Counting Down To Forever</h2>
+            <div class="header-divider"><i class="fa-solid fa-heart"></i></div>
+            <p>17th January 2027 • Shubh Hasthmelap Muhurat at 10:19 AM</p>
+          </div>
+
+          <div class="countdown-content-grid">
+            
+            <!-- Left Portrait -->
+            <div class="countdown-portrait-col">
+              <div class="portrait-frame">
+                <img id="countdown-couple-photo" src="IMG_0053.JPG.jpeg" alt="Kissna and Dhaval">
+                <div class="portrait-overlay-glow"></div>
+              </div>
+            </div>
+
+            <!-- Right Timer & Quote -->
+            <div class="countdown-timer-col">
+              <div class="timer-grid">
+                <div class="timer-box">
+                  <div id="days" class="timer-num">00</div>
+                  <div class="timer-label">Days</div>
+                </div>
+                <div class="timer-box">
+                  <div id="hours" class="timer-num">00</div>
+                  <div class="timer-label">Hours</div>
+                </div>
+                <div class="timer-box">
+                  <div id="minutes" class="timer-num">00</div>
+                  <div class="timer-label">Minutes</div>
+                </div>
+                <div class="timer-box">
+                  <div id="seconds" class="timer-num">00</div>
+                  <div class="timer-label">Seconds</div>
+                </div>
+              </div>
+
+              <blockquote id="romantic-quote" class="countdown-quote">
+                "Two souls with but a single thought, two hearts that beat as one. A beautiful journey of friendship, love, and forever begins here."
+              </blockquote>
+
+              <div class="countdown-actions">
+                <button id="btn-add-calendar" class="btn-royal-gold">
+                  <i class="fa-solid fa-calendar-plus"></i> Add To Calendar (.ics)
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EVENTS & SCHEDULE SECTION (LAGNA PATRIKA)
+         ========================================================================== -->
+    <section id="events-section" class="section-padding events-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Sacred Ceremonies</span>
+          <h2>Wedding Itinerary</h2>
+          <div class="header-divider"><i class="fa-solid fa-hands-praying"></i></div>
+          <p>Please grace each auspicious ceremony with your presence and blessings</p>
+        </div>
+
+        <div id="event-grid" class="event-grid">
+          <!-- Rendered dynamically from config.js -->
+        </div>
+
+        <!-- View Original Invitation Card Button -->
+        <div class="invitation-card-link-wrap">
+          <button id="btn-view-card" class="btn-outline-gold">
+            <i class="fa-solid fa-image"></i> View Traditional Lagna Patrika
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHOTO GALLERY SECTION
+         ========================================================================== -->
+    <section id="gallery-section" class="section-padding gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Memories & Smiles</span>
+          <h2>Our Happy Moments</h2>
+          <div class="header-divider"><i class="fa-solid fa-camera-retro"></i></div>
+          <p>A glimpse into our laughter, romance, and beautiful pre-wedding memories</p>
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid">
+          <!-- Rendered dynamically from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VENUE & MAP DIRECTIONS SECTION
+         ========================================================================== -->
+    <section id="venue-section" class="section-padding venue-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Celebration Venue</span>
+          <h2>How To Reach Us</h2>
+          <div class="header-divider"><i class="fa-solid fa-location-dot"></i></div>
+          <p>We await your warm presence at Vidhyarthi Bhavan, Nakhatrana</p>
+        </div>
+
+        <div class="venue-card-wrapper">
+          <div class="venue-info-box">
+            <div class="venue-badge"><i class="fa-solid fa-hotel"></i> Wedding Destination</div>
+            <h3>Vidhyarthi Bhavan (Boarding)</h3>
+            <p class="venue-address">
+              <i class="fa-solid fa-map-pin"></i> Nakhatrana, Bhuj Kutch, Gujarat – 370615
+            </p>
+            <div class="venue-highlights">
+              <div class="highlight-item">
+                <i class="fa-regular fa-calendar-star"></i>
+                <div>
+                  <strong>Ceremony Dates</strong>
+                  <span>16th – 17th January 2027</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-road"></i>
+                <div>
+                  <strong>Location</strong>
+                  <span>Centrally located in Nakhatrana, Bhuj</span>
+                </div>
+              </div>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Vidhyarthi+Bhavan+Nakhatrana+Bhuj+Kutch+Gujarat+370615" 
+               target="_blank" rel="noopener noreferrer" class="btn-royal-gold">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open In Google Maps
+            </a>
+          </div>
+
+          <div class="venue-map-box">
+            <iframe 
+              title="Nakhatrana Location Map"
+              src="https://maps.google.com/maps?q=Nakhatrana+Bhuj+Kutch+Gujarat+370615&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="340" 
+              style="border:0; border-radius: 16px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button id="lightbox-prev" class="lightbox-nav-btn prev" aria-label="Previous photo">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="lightbox-next" class="lightbox-nav-btn next" aria-label="Next photo">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Enlarged wedding moment">
+      </div>
+
+      <div class="lightbox-info">
+        <h4 id="lightbox-title"></h4>
+        <p id="lightbox-caption"></p>
+        <div id="lightbox-counter" class="lightbox-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TRADITIONAL LAGNA PATRIKA MODAL (5-PAGE BOOKLET VIEWER)
+       ========================================================================== -->
+  <div id="card-modal" class="lightbox">
+    <div class="lightbox-content card-modal-content">
+      <button id="card-modal-close" class="lightbox-close" aria-label="Close card modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button id="card-modal-prev" class="lightbox-nav-btn prev" aria-label="Previous page">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="card-modal-next" class="lightbox-nav-btn next" aria-label="Next page">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="lightbox-img-wrap patrika-img-wrap">
+        <img id="card-modal-img" src="assets/patrika_page_1.jpg" alt="Traditional Lagna Patrika">
+      </div>
+
+      <div class="lightbox-info patrika-info">
+        <h4 id="card-modal-title">Traditional Lagna Patrika</h4>
+        <p id="card-modal-caption">Page 1 • Cover &amp; Divine Ganesh Vandana</p>
+        <div id="card-modal-counter" class="lightbox-counter">Page 1 of 5</div>
+        <div id="card-modal-dots" class="patrika-dots">
+          <!-- Rendered dynamically -->
+        </div>
+        <div class="card-modal-download-wrap">
+          <a href="lagna_patrika.pdf" target="_blank" download="Kissna_Dhaval_Lagna_Patrika.pdf" class="btn-royal-gold btn-sm">
+            <i class="fa-solid fa-file-pdf"></i> Download PDF
+          </a>
+          <a href="lagna_patrika.pdf" target="_blank" class="btn-outline-gold btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open In New Tab
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer-section">
+    <div class="container footer-content">
+      <div class="footer-monogram">
+        <img src="WhatsApp Image 2026-11-03 at 1.11.39 PM.jpeg" alt="DK Monogram" class="footer-seal">
+      </div>
+      <h2 id="footer-names">Kissna & Dhaval</h2>
+      <p class="footer-shloka">|| માંગલ્યમ્ ભગવાન વિષ્ણુઃ, માંગલ્યમ્ ગરુડધ્વજઃ । માંગલ્યમ્ પુંડરીકાક્ષઃ, મંગલાય તનો હરિઃ ||</p>
+      <p class="footer-gratitude">We look forward to welcoming you with warmth, love, and joyous celebrations!</p>
+      
+      <div class="footer-families">
+        <span>With Best Compliments:</span>
+        <p><strong>Somjiyani Family</strong></p>
+      </div>
+
+      <div class="footer-credit">
+        &copy; 2027 Kissna &amp; Dhaval's Wedding. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
